@@ -1,3 +1,5 @@
+'use strict';
+
 var classCallCheck = function (instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -10,4 +12,4 @@ var Hello = function Hello() {
   console.log("hello");
 };
 
-export default Hello;
+module.exports = Hello;

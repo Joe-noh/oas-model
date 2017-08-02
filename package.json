@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/bundle.js",
   "scripts": {
-    "build": "rollup --format es --config",
+    "build": "rollup --format cjs --config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
