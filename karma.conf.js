@@ -1,4 +1,7 @@
 const babel = require('rollup-plugin-babel')
+const nodeResolve = require('rollup-plugin-node-resolve')
+const nodeBuiltins = require('rollup-plugin-node-builtins')
+const nodeGlobals = require('rollup-plugin-node-globals')
 
 module.exports = function (config) {
   config.set({
@@ -14,6 +17,9 @@ module.exports = function (config) {
     },
     rollupPreprocessor: {
       plugins: [
+        nodeResolve(),
+        nodeBuiltins(),
+        nodeGlobals(),
         babel(),
       ],
       format: 'iife',
