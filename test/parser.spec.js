@@ -1,9 +1,20 @@
-import Hello from '../src/main'
+import Parser from '../src/parser'
+import path from 'path'
 
-describe('Hello', () => {
-  it('can be instantiated', () => {
-    const hello = new Hello()
+describe('Parser', () => {
+  let parser;
 
-    expect(hello).not.to.be.false
+  beforeEach(() => {
+    parser = new Parser()
+  })
+
+  it('can accept url', () => {
+    parser.parse({url: 'https://example.com/openapi.json'})
+  })
+
+  it('can accept path', () => {
+    console.log('hey');
+    const filePath = path.resolve(__dirname, './support/swagger.json')
+    parser.parse({path: filePath})
   })
 })
