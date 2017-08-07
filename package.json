@@ -2,9 +2,10 @@
   "name": "oas-model",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "dist/bundle.umd.js",
+  "jsnext:main": "dist/bundle.es6.js",
   "scripts": {
-    "build": "rollup --config build/rollup.config.js",
+    "build": "rollup --config build/rollup.config.umd.js && rollup --config build/rollup.config.es6.js",
     "test": "mocha tmp/test.bundle.js",
     "pretest": "rollup --config build/rollup.config.test.js"
   },
