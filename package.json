@@ -5,7 +5,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "rollup --format cjs --config",
-    "test": "karma start"
+    "test": "mocha build/test.bundle.js"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,6 @@
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
     "chai": "^4.1.0",
-    "karma": "^1.7.0",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-cli": "^1.0.1",
-    "karma-mocha": "^1.3.0",
-    "karma-rollup-preprocessor": "^4.0.2",
     "mocha": "^3.5.0",
     "rollup": "^0.45.2",
     "rollup-plugin-babel": "^2.7.1",
