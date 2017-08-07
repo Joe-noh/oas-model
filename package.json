@@ -4,6 +4,9 @@
   "description": "",
   "main": "dist/bundle.umd.js",
   "jsnext:main": "dist/bundle.es6.js",
+  "bin": {
+    "oas-model": "bin/oas-model.js"
+  },
   "scripts": {
     "build": "rollup --config build/rollup.config.umd.js && rollup --config build/rollup.config.es6.js",
     "test": "mocha tmp/test.bundle.js",
@@ -30,5 +33,8 @@
     "rollup-plugin-multi-entry": "^2.0.1",
     "rollup-plugin-node-resolve": "^3.0.0",
     "source-map-support": "^0.4.15"
+  },
+  "dependencies": {
+    "commander": "^2.11.0"
   }
 }
