@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/bundle.js",
   "scripts": {
-    "build": "rollup --config",
+    "build": "rollup --config build/rollup.config.js",
     "test": "mocha tmp/test.bundle.js",
-    "pretest": "rollup --config rollup.config.test.js"
+    "pretest": "rollup --config build/rollup.config.test.js"
   },
   "repository": {
     "type": "git",
