@@ -4,8 +4,9 @@
   "description": "",
   "main": "dist/bundle.js",
   "scripts": {
-    "build": "rollup --format cjs --config",
-    "test": "mocha build/test.bundle.js"
+    "build": "rollup --config",
+    "test": "mocha build/test.bundle.js",
+    "pretest": "rollup --config rollup.config.test.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
     "mocha": "^3.5.0",
     "rollup": "^0.45.2",
     "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "rollup-plugin-multi-entry": "^2.0.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "source-map-support": "^0.4.15"
   }
 }
