@@ -5,7 +5,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "rollup --config",
-    "test": "mocha build/test.bundle.js",
+    "test": "mocha tmp/test.bundle.js",
     "pretest": "rollup --config rollup.config.test.js"
   },
   "repository": {

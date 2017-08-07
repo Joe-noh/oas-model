@@ -4,7 +4,7 @@ import multiEntry from 'rollup-plugin-multi-entry'
 
 export default {
   entry: 'test/**/*.js',
-  dest: 'build/test.bundle.js',
+  dest: 'tmp/test.bundle.js',
   format: 'cjs',
   plugins: [
     nodeResolve({jsnext: true}),
