@@ -7,6 +7,7 @@
   "scripts": {
     "build": "rollup --config build/rollup.config.umd.js && rollup --config build/rollup.config.es6.js",
     "test": "mocha tmp/test.bundle.js",
+    "test:watch": "nodemon --watch src --watch tests --exec 'npm test'",
     "pretest": "rollup --config build/rollup.config.test.js"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "chai": "^4.1.0",
     "mocha": "^3.5.0",
+    "nodemon": "^1.11.0",
     "rollup": "^0.45.2",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-multi-entry": "^2.0.1",
